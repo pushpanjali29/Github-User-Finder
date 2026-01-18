@@ -66,13 +66,13 @@ function App() {
                 {user.location && <span>📍 {user.location}</span>}
                 {user.company && <span>🏢 {user.company}</span>}
                 {user.blog && (
-                  <a href={user.blog} target="_blank">
-                    {user.blog}
-                  </a>
+                  <a href={user.blog} target="_blank" rel="noreferrer">
+  {user.blog}
+</a>
                 )}
-                <a href={user.html_url} target="_blank">
-                  View on GitHub
-                </a>
+                <a href={user.html_url} target="_blank" rel="noreferrer">
+  View on GitHub
+</a>
               </div>
             </div>
           </div>
