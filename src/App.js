@@ -41,6 +41,11 @@ function App() {
             placeholder="e.g. torvalds, gaearon, octocat"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") {
+                handleSearch();
+              }
+            }}
           />
           <button onClick={handleSearch}>Search</button>
         </div>
